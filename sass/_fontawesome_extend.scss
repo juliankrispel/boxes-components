@@ -1,0 +1,18 @@
+@import "../components/font-awesome/scss/variables";
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../components/font-awesome/font/fontawesome-webfont.eot?v=#{$FontAwesomeVersion}');
+  src: url('../components/font-awesome/font/fontawesome-webfont.eot?#iefix&v=#{$FontAwesomeVersion}') format('embedded-opentype'),
+    url('../components/font-awesome/font/fontawesome-webfont.woff?v=#{$FontAwesomeVersion}') format('woff'),
+    url('../components/font-awesome/font/fontawesome-webfont.ttf?v=#{$FontAwesomeVersion}') format('truetype'),
+    url('../components/font-awesome/font/fontawesome-webfont.svg#fontawesomeregular?v=#{$FontAwesomeVersion}') format('svg');
+//  src: url('../components/font-awesome/font/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "../components/font-awesome/scss/mixins";
+@import "../components/font-awesome/scss/core";
+@import "../components/font-awesome/scss/icons";
+

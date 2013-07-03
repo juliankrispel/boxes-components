@@ -1,0 +1,100 @@
+$select2-hover-bg: #eee;
+$select2-dropdown-border: $input-border;
+$select2-dropdown-box-shadow: none;
+$select2-dropdown-background: #fff;
+$select2-search-border: $input-border;
+$select2-search-box-shadow: auto;
+$select2-border-radius: $border-radius;
+
+.select2-container{
+    a{
+        text-decoration: none;
+    }
+
+    .select2-choice{
+        border: $select2-dropdown-border;
+        display: block;
+        padding: $margin-tiny;
+        position: relative;
+        border-radius: $select2-border-radius;
+        background: $select2-dropdown-background;
+        &:hover{
+            background: $select2-hover-bg;
+            color: auto;
+        }
+
+        div{
+            b{
+                @include icon-FontAwesome();
+                @extend .icon-caret-down;
+                font-size: 1.3em;
+            }
+            line-height: 2em;
+            display: block;
+            width: 20px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%; 
+        }
+    }
+
+    &.select2-dropdown-open{
+        .select2-choice{
+            border-bottom: none;
+            border-radius: $select2-border-radius $select2-border-radius 0 0;
+            &:hover{
+                background: $select2-dropdown-background;
+                color: auto;
+            }
+        }
+    }
+}
+
+.select2-drop{
+    background: $select2-dropdown-background;
+    box-shadow: $select2-dropdown-box-shadow;
+    border: $select2-dropdown-border;
+    border-top: 0;
+    border-radius: 0 0 $select2-border-radius $select2-border-radius;
+}
+
+.select2-search{
+    position: relative;
+    padding: 0 $margin-tiny;
+    input{
+        @include box-shadow($select2-search-box-shadow);
+        margin: 0;
+        border: $select2-search-border;
+    }
+
+}
+
+.select2-results{
+    margin: 0;
+    @extend .no-list-style;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .select2-highlighted{
+        background: $select2-hover-bg;
+    }
+    .select2-result-label{
+        padding: $margin-tiny;
+    }
+}
+
+//Copied from select2 css
+.select2-offscreen {
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    outline: none;
+    left: 0px;
+}
+

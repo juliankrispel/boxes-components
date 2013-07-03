@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+        "jquery": "*",
+        "select2": "*",
+        "font-awesome": "git@github.com:FortAwesome/Font-Awesome.git"
+    }
+}

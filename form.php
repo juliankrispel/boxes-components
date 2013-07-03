@@ -37,34 +37,34 @@
             </div>
         </div>
         <div class="row">
-            <h3 class="m-t m-b-t">Custom Dropdowns</h3>
+            <h3 class="m-t m-b-t"><a href="http://ivaynberg.github.io/select2">Select2</a> Custom Dropdown Skin</h3>
             <div class="large-6 columns large-p-r">
-                <div class="button text-left full-width">
-                    Dropdown
-                    <span class="right">&#9660;</span>
-                </div>
+                <div class="select2-container" id="s2id_type"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span>Company</span>   <abbr class="select2-search-choice-link" style="display:none;"></abbr>   <abbr class="select2-search-choice-close" style="display:none;"></abbr>   <div><b></b></div></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen1"></div>
             </div>
             <div class="large-6 columns large-p-l">
-                <div class="button text-left full-width">
-                    <div class="row m-b-t">
-                        Dropdown
-                        <span class="right">&#9660;</span>
-                    </div>
-                    <input type="text" placeholder="Search Options"/>
-                    <ul class="row no-list-style">
-                        <li>Option 1</li>
-                        <li>Option 2</li>
-                        <li>Option 3</li>
-                        <li>Option 4</li>
-                    </ul>
-                </div>
-
+                <div class="select2-container select2-dropdown-open" id="s2id_type"><a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">   <span>Company</span>   <abbr class="select2-search-choice-link" style="display:none;"></abbr>   <abbr class="select2-search-choice-close" style="display:none;"></abbr>   <div><b></b></div></a><input class="select2-focusser select2-offscreen" type="text" id="s2id_autogen1"></div>
+                <div class="select2-drop undefined select2-with-searchbox select2-drop-active" id="select2-drop">   <div class="select2-search">       <input type="text" autocomplete="off" class="select2-input select2-focused">   </div>   <ul class="select2-results"><li class="select2-results-dept-0 select2-result select2-result-selectable"><div class="select2-result-label"><span class="select2-match"></span>Person</div></li><li class="select2-results-dept-0 select2-result select2-result-selectable select2-highlighted"><div class="select2-result-label"><span class="select2-match"></span>Company</div></li></ul></div>
             </div>
+
+        </div>
+        <div class="row">
             <h3 class="m-t m-b-t">Custom Button Groups</h3>
             <div class="row btn-group m-b">
                 <div class="large-2 columns button text-left">Filters<div class="right">I</div></div>
                 <input class="large-9 columns" type="text" placeholder="Search"/>
                 <div class="button large-1 columns">Search</div>
+            </div>
+            <div class="row">
+                <div class="large-4 columns">
+                    <div class="row btn-group">
+                        <input type="date" class="large-9 columns"/>
+                        <button class="button large-3 columns icon-remove"></button>
+                    </div>
+                </div>
+                <div class="large-4 columns">
+                </div>
+                <div class="large-4 columns">
+                </div>
             </div>
         </div>
         <div class="row">
