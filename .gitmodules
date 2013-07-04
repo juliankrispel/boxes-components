@@ -1,3 +1,0 @@
-[submodule "extensions/boxes"]
-	path = extensions/boxes
-	url = git@github.com:juliankrispel/boxes.git

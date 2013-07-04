@@ -2,6 +2,7 @@
     "dependencies": {
         "jquery": "*",
         "select2": "*",
-        "font-awesome": "git@github.com:FortAwesome/Font-Awesome.git"
+        "font-awesome": "git@github.com:FortAwesome/Font-Awesome.git",
+        "boxes": "https://github.com/juliankrispel/boxes.git"
     }
 }
