@@ -1,5 +1,6 @@
 {
     "name": "boxes-components",
+    "version": "0.0.1",
     "dependencies": {
         "jquery": "*",
         "select2": "*",
