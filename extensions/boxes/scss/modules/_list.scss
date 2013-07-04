@@ -1,0 +1,96 @@
+// Standard 
+ul{
+    padding-left: $list-padding-left;
+    list-style: $unordered-list-style;
+    line-height: $list-line-height;
+}
+
+/*
+ * .no-list-style
+ * 
+ * Removes default list-style and padding
+ * 
+ * @tag .no-list-style
+ */
+
+.no-list-style{
+    list-style: none;
+    padding-left: 0;
+    line-height: $list-line-height;
+}
+
+// Make sure that nested uls are indented even if no bullet.
+ul .no-list-style{
+    padding-left: $list-padding-left;
+    line-height: $list-line-height;
+}
+
+
+/*
+ * Inline list 
+ * 
+ * Discards bullets and puts the list inline. This doesn't have to be a list by the way, it can also be any container with children
+ * <ul class="inline-list">
+ *     <li>Item 1</li>
+ *     <li>Item 2</li>
+ *     <li>Item 3</li>
+ * </ul>
+ * 
+ * @tag       .inline-list
+ * @child-tag > * (any direct descendant)
+ */
+
+.inline-list{
+    padding-left: 0;
+    margin: 0;
+
+    > *{
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: $inline-list-margin;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+/*
+ * Custom List
+ * 
+ * For use with custom bullet points. For example
+ * <ul class="custom-list">
+ *     <li><span class="list-image">A</span>Item A</li>
+ *     <li><span class="list-image">B</span>Item B</li>
+ *     <li><span class="list-image">C</span>Item C</li>
+ * </ul>
+ * 
+ * @tag       .custom-list
+ * @child-tag .custom-list-image
+ */
+
+.custom-list{
+    list-style: none;
+    padding: 0;
+    li{
+        padding-left: $custom-list-padding-left;
+        position: relative;
+    }
+}
+
+/*
+ * Custom List image
+ * 
+ * Mainly for use inside .custom-list
+ * 
+ * @tag         .list-image
+ * @parent-tag  .custom-list
+ */
+
+.custom-list-image{
+    width: $custom-list-padding-left;
+    position: absolute;
+    left: 0;
+    line-height: inherit;
+    text-align: $list-image-text-align;
+}
