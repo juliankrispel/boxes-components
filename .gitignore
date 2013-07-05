@@ -2,4 +2,5 @@
 .sass-cache/
 components
 node_modules
+extensions
 css
